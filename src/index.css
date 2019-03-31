@@ -13,6 +13,7 @@ code {
 /*
 * Navbar
 */
+
 nav#navbar ul {
   padding-right: 5px;
   right: 0px;
@@ -23,6 +24,7 @@ nav#navbar ul li:hover {
   cursor: pointer;
   color: blue;
 }
+
 nav#navbar ul li {
   padding: 0rem 1rem;
 }
@@ -36,7 +38,72 @@ nav#navbar {
 * Body
 */
 
+/* 
+#homepagesection {
+  background: url("assets/mosteiro_santa_clara.jpg") 50% 0 repeat-y fixed;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+} */
+
+div#head {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  height: 200px;
+  padding: 20% 1%;
+  background: url("assets/mosteiro_santa_clara.jpg") 50% 0 repeat-y fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  div#head {
+    padding: 4% 1%;
+  }
+}
+
+div#head::after {
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+img#img1 {
+  background: url("/assets/pic01.jpg")
+}
+
+div#mgsDiv, div#sapDiv {
+  text-align: right;
+  background-color: #5a69c0;
+  color: black;
+  padding: 10px;
+}
+
+div#smsDiv {
+  text-align: left;
+  background-color: #dbe0ff;
+  padding: 10px;
+}
 
 /*
 * Footer
 */
+
+li.morada p {
+  margin: 0px;
+}
+
+.footer-divider {
+  width: 0;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #e9ecef;
+}
+
+i.fas {
+  margin-right: 5px;
+}
