@@ -1,4 +1,6 @@
 import React from "react";
+import CompanyBranches from "./bodyComponents/CompanyBranches"
+import JoinUs from "./bodyComponents/JoinUs"
 
 function Body(){
     /**
@@ -8,7 +10,8 @@ function Body(){
     
     return (
         <main>
-
+            <CompanyBranches />
+            <JoinUs />
         </main>
     )
 }

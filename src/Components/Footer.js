@@ -3,7 +3,7 @@ import React from "react"
 function Footer() {
     return (
         <footer>
-            <button className="btn btn-outline-success">Nice</button>
+            <h1 style={{backgroundColor: "#2e3141", color: "white"}}> Footer </h1>
         </footer>
     )
 }
