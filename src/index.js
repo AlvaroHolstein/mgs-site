@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import 'bootstrap', Vou só buscar o CSS disto, porque assim vai buscar o js...
+// import App from './App';
+import './assets/bootstrap.css' //Isto exporta tipo como num documento HTML?
+import NavBar from "./Components/NavBar"
+import Body from "./Components/Body"
+import Footer from "./Components/Footer"
+// import * as serviceWorker from './serviceWorker';
+
+function App() {
+    return (
+        <div>
+            <NavBar />
+            <Body />
+            <Footer />
+        </div>
+    )
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
